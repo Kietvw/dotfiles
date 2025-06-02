@@ -196,6 +196,8 @@ return {
 						".DS_Store",
 						"thumbs.db",
 						"node_modules",
+						".svn",
+						".vscode",
 						"__pycache__",
 						".virtual_documents",
 						".git",
