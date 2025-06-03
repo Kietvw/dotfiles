@@ -121,7 +121,7 @@ return {
 
 		local vuels_path = vim.fn.expand("$MASON/packages")
 			.. "/vue-language-server"
-			.. "/node_modules/@vue/language-servers"
+			.. "/node_modules/@vue/language-server"
 
 		-- Enable the following language servers
 		--  Feel free to add/remove any LSPs that you want here. They will automatically be installed.
@@ -160,21 +160,6 @@ return {
 								location = vuels_path,
 								languages = { "vue" },
 							},
-						},
-					},
-					typescript = {
-						tsserver = {
-							useSyntaxserver = false,
-						},
-						inlayHints = {
-							includeInlayParameterNameHints = "all",
-							includeInlayParameterNameHintsWhenArgumentMatchesName = true,
-							includeInlayFunctionParameterTypeHints = true,
-							includeInlayVariableTypeHints = true,
-							includeInlayVariableTypeHintsWhenTypeMatchesName = true,
-							includeInlayPropertyDeclarationTypeHints = true,
-							includeInlayFunctionLikeReturnTypeHints = true,
-							includeInlayEnumMemberValueHints = true,
 						},
 					},
 				},
