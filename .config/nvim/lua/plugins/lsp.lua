@@ -153,6 +153,7 @@ return {
 			},
 			vue_ls = {},
 			intelephense = {},
+			prettierd = {},
 		}
 
 		local server_keys = vim.tbl_keys(servers or {})
