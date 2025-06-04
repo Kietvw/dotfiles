@@ -58,11 +58,28 @@ return {
 			},
 			pickers = {
 				find_files = {
-					file_ignore_patterns = { "storage", ".vscode", ".svn", "node_modules", ".git", ".venv" },
+					file_ignore_patterns = {
+						"storage/debugbar",
+						"storage/framework",
+						".vscode",
+						".svn",
+						"node_modules",
+						".git",
+						".venv",
+					},
 					hidden = true,
 				},
 				live_grep = {
-					file_ignore_patterns = { "storage", ".vscode", ".svn", "node_modules", ".git", ".venv" },
+					file_ignore_patterns = {
+						"storage/logs",
+						"storage/debugbar",
+						"storage/framework",
+						".vscode",
+						".svn",
+						"node_modules",
+						".git",
+						".venv",
+					},
 					additional_args = function(_)
 						return { "--hidden" }
 					end,
