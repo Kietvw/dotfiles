@@ -203,6 +203,7 @@ return {
 						".git",
 						".python-version",
 						".venv",
+						".github",
 					},
 					hide_by_pattern = { -- uses glob style patterns
 						--"*.meta",
