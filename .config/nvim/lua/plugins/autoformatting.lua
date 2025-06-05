@@ -25,6 +25,7 @@ return {
 			typescript = { "prettierd", stop_after_first = true },
 			vue = { "prettierd", stop_after_first = true },
 			html = { "prettierd" },
+			json = { "prettierd" },
 		},
 		-- Set default options
 		default_format_opts = {
