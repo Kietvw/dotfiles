@@ -20,10 +20,9 @@ return {
 		-- Define your formatters
 		formatters_by_ft = {
 			lua = { "stylua" },
-			python = { "isort", "black" },
-			javascript = { "prettierd", stop_after_first = true },
-			typescript = { "prettierd", stop_after_first = true },
-			vue = { "prettierd", stop_after_first = true },
+			javascript = { "prettierd" },
+			typescript = { "prettierd" },
+			vue = { "prettierd" },
 			html = { "prettierd" },
 			json = { "prettierd" },
 		},
