@@ -2,8 +2,8 @@ return {
 	"neovim/nvim-lspconfig",
 	dependencies = {
 		-- Automatically install LSPs and related tools to stdpath for Neovim
-		{ "williamboman/mason.nvim", config = true }, -- NOTE: Must be loaded before dependants
-		"williamboman/mason-lspconfig.nvim",
+		{ "mason-org/mason.nvim", opts = {} }, -- NOTE: Must be loaded before dependants
+		"mason-org/mason-lspconfig.nvim",
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
 
 		-- Useful status updates for LSP.
@@ -11,7 +11,7 @@ return {
 		{ "j-hui/fidget.nvim", opts = {} },
 
 		-- Allows extra capabilities provided by nvim-cmp
-		"hrsh7th/cmp-nvim-lsp",
+		"saghen/blink.cmp",
 	},
 	config = function()
 		--  This function gets run when an LSP attaches to a particular buffer.
@@ -116,8 +116,7 @@ return {
 		--  By default, Neovim doesn't support everything that is in the LSP specification.
 		--  When you add nvim-cmp, luasnip, etc. Neovim now has *more* capabilities.
 		--  So, we create new capabilities with nvim cmp, and then broadcast that to the servers.
-		local capabilities = vim.lsp.protocol.make_client_capabilities()
-		capabilities = vim.tbl_deep_extend("force", capabilities, require("cmp_nvim_lsp").default_capabilities())
+		local capabilities = require('blink.cmp').get_lsp_capabilities()
 
 		local vuels_path = vim.fn.expand("$MASON/packages")
 			.. "/vue-language-server"
