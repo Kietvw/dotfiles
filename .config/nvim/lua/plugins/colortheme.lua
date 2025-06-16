@@ -96,9 +96,6 @@ return {
 			},
 		})
 
-		require("lualine").setup({
-			theme = "auto",
-		})
 
 		vim.cmd("colorscheme cyberdream")
 	end,
