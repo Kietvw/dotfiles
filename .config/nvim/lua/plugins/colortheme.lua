@@ -29,20 +29,27 @@ return {
 			cache = false,
 
 			overrides = function(colors)
+				local custom_colors = {
+					white = "#ffffff",
+					lightyellow = "#dcdbad",
+					lightblue = "#a2ddfc",
+				}
+
+				-- VSCode like theme.
 				return {
 					Comment = { fg = colors.green, bg = "NONE", italic = false },
 					Type = { fg = colors.cyan },
-					Identifier = { fg = "#a2ddfc" },
+					Identifier = { fg = custom_colors.lightblue },
 					["@boolean"] = { fg = colors.blue },
 					["@constructor"] = { fg = colors.cyan },
-					["@constant"] = { fg = colors.white },
+					["@constant"] = { fg = custom_colors.white },
 					["@constant.builtin"] = { fg = colors.blue },
-					["@function"] = { fg = "#dcdbad" },
-					["@function.call"] = { fg = "#dcdbad" },
+					["@function"] = { fg = custom_colors.lightyellow },
+					["@function.call"] = { fg = custom_colors.lightyellow },
 					["@punctuation.bracket"] = { fg = colors.yellow },
 					["@punctuation.bracket.alt"] = { fg = colors.red },
 					["@punctuation.special"] = { fg = colors.blue },
-					["@punctuation.special.vue"] = { fg = colors.white },
+					["@punctuation.special.vue"] = { fg = custom_colors.white },
 					["@keyword"] = { fg = colors.blue },
 					["@keyword.exception"] = { fg = colors.purple },
 					["@keyword.function"] = { fg = colors.blue },
@@ -50,7 +57,7 @@ return {
 					["@keyword.import.php"] = { fg = colors.blue },
 					["@keyword.return"] = { fg = colors.purple },
 					["@keyword.conditional"] = { fg = colors.purple },
-					["@keyword.conditional.ternary"] = { fg = colors.white },
+					["@keyword.conditional.ternary"] = { fg = custom_colors.white },
 					["@keyword.repeat"] = { fg = colors.purple },
 					["@keyword.type"] = { fg = colors.blue },
 					["@keyword.modifier"] = { fg = colors.blue },
@@ -59,16 +66,16 @@ return {
 					["@tag.delimeter"] = { fg = colors.grey },
 					["@type.builtin"] = { fg = colors.cyan },
 					["@type.builtin.php"] = { fg = colors.blue },
-					["@operator"] = { fg = colors.white },
+					["@operator"] = { fg = custom_colors.white },
 					["@module"] = { fg = colors.cyan },
 					["@number"] = { fg = colors.green },
 					["@string"] = { fg = colors.orange },
 					["@string.regexp"] = { fg = colors.red },
 					["@string.escape"] = { fg = colors.blue },
-					["@variable"] = { fg = "#a2ddfc" },
+					["@variable"] = { fg = custom_colors.lightblue },
 					["@variable.builtin"] = { fg = colors.blue },
-					["@variable.member"] = { fg = "#a2ddfc" },
-					["@variable.parameter.php"] = { fg = colors.white },
+					["@variable.member"] = { fg = custom_colors.lightblue },
+					["@variable.parameter.php"] = { fg = custom_colors.white },
 				}
 			end,
 
@@ -95,7 +102,6 @@ return {
 				telescope = false,
 			},
 		})
-
 
 		vim.cmd("colorscheme cyberdream")
 	end,
