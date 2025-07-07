@@ -32,6 +32,13 @@ return {
 	},
 	{ -- Documentation blocks
 		"kkoomen/vim-doge",
+
+		config = function()
+			vim.g.doge_javascript_settings = {
+				destructuring_props = 1,
+				omit_redundant_param_types = 1,
+			}
+		end,
 	},
 	{ -- Show CSS Colors
 		"brenoprata10/nvim-highlight-colors",
