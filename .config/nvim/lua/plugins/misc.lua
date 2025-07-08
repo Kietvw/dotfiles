@@ -15,30 +15,20 @@ return {
 	{ -- Hints keybinds
 		"folke/which-key.nvim",
 	},
-	{ -- Autoclose parentheses, brackets, quotes, etc.
-		"windwp/nvim-autopairs",
-		event = "InsertEnter",
-		config = true,
-		opts = {},
-	},
 	{ -- Highlight todo, notes, etc in comments
 		"folke/todo-comments.nvim",
 		event = "VimEnter",
 		dependencies = { "nvim-lua/plenary.nvim" },
 		opts = { signs = false },
 	},
+	{ -- Autoclose parentheses, brackets, quotes, etc.
+		"windwp/nvim-autopairs",
+		event = "InsertEnter",
+		config = true,
+		opts = {},
+	},
 	{ -- Quick searches
 		"justinmk/vim-sneak",
-	},
-	{ -- Documentation blocks
-		"kkoomen/vim-doge",
-
-		config = function()
-			vim.g.doge_javascript_settings = {
-				destructuring_props = 1,
-				omit_redundant_param_types = 1,
-			}
-		end,
 	},
 	{ -- Show CSS Colors
 		"brenoprata10/nvim-highlight-colors",

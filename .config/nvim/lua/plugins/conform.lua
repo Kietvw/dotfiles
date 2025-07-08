@@ -1,0 +1,33 @@
+return {
+	"stevearc/conform.nvim",
+	event = { "BufWritePre" },
+	cmd = { "ConformInfo" },
+	keys = {
+		{
+			"<leader>f",
+			function()
+				require("conform").format({ async = true }, function(err, did_edit)
+					if not err and did_edit then
+						vim.notify("Code formatted", vim.log.levels.INFO, { title = "Conform" })
+					end
+				end)
+			end,
+			mode = { "n", "v" },
+			desc = "Format buffer",
+		},
+	},
+	opts = {
+		formatters_by_ft = {
+			lua = { "stylua" },
+
+			javascript = { "prettierd" },
+			typescript = { "prettierd" },
+			vue = { "prettierd" },
+			html = { "prettierd" },
+			json = { "prettierd" },
+		},
+		default_format_opts = {
+			lsp_format = "fallback",
+		},
+	},
+}
