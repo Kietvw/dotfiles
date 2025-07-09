@@ -1,5 +1,7 @@
 local blink = require("blink.cmp")
 
+local vuels_path = vim.fn.expand("$MASON/packages") .. "/vue-language-server" .. "/node_modules/@vue/language-server"
+
 return {
 	cmd = { "typescript-language-server", "--stdio" },
 	filetypes = {
@@ -9,28 +11,16 @@ return {
 		"typescript",
 		"typescriptreact",
 		"typescript.tsx",
-		-- "vue",
+		"vue",
 	},
 	root_markers = { "tsconfig.json", "jsconfig.json", "package.json", ".git" },
-	settings = {
-		typescript = {
-			-- Remove tsdk setting to allow auto-detection
-			tsserver = {
-				useSyntaxServer = false,
+	init_options = {
+		plugins = {
+			{
+				name = "@vue/typescript-plugin",
+				location = vuels_path,
+				languages = { "javascript", "typescript", "vue" },
 			},
-			inlayHints = {
-				includeInlayParameterNameHints = "all",
-				includeInlayParameterNameHintsWhenArgumentMatchesName = true,
-				includeInlayFunctionParameterTypeHints = true,
-				includeInlayVariableTypeHints = true,
-				includeInlayVariableTypeHintsWhenTypeMatchesName = true,
-				includeInlayPropertyDeclarationTypeHints = true,
-				includeInlayFunctionLikeReturnTypeHints = true,
-				includeInlayEnumMemberValueHints = true,
-			},
-		},
-		javascript = {
-			-- Remove tsdk setting to allow auto-detection
 		},
 	},
 	capabilities = vim.tbl_deep_extend(
