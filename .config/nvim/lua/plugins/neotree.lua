@@ -5,7 +5,7 @@ return {
 		"nvim-lua/plenary.nvim",
 		"nvim-tree/nvim-web-devicons",
 		"MunifTanjim/nui.nvim",
-		-- "3rd/image.nvim", 
+		-- "3rd/image.nvim",
 	},
 	config = function()
 		-- If you want icons for diagnostic errors, you'll need to define them somewhere:
