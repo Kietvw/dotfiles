@@ -25,6 +25,8 @@ return {
 			vue = { "prettierd" },
 			html = { "prettierd" },
 			json = { "prettierd" },
+
+			xml = { "xmlformatter" },
 		},
 		default_format_opts = {
 			lsp_format = "fallback",
