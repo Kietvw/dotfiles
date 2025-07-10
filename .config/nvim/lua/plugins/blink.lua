@@ -15,8 +15,16 @@ return {
 			"rafamadriz/friendly-snippets",
 		},
 		version = "1.*",
+		---@module 'blink.cmp'
+		---@type blink.cmp.Config
 		opts = {
 			completion = {
+				list = {
+					selection = {
+						auto_insert = false,
+						preselect = false,
+					},
+				},
 				documentation = {
 					auto_show = true,
 				},
@@ -32,9 +40,36 @@ return {
 				},
 			},
 			keymap = {
-				preset = "enter",
+				preset = "none",
+				["<C-b>"] = { "scroll_documentation_up", "fallback" },
+				["<C-f>"] = { "scroll_documentation_down", "fallback" },
 				["<C-j>"] = { "select_next", "fallback" },
 				["<C-k>"] = { "select_prev", "fallback" },
+				["<Tab>"] = {
+					--- Accept selection, else select first option.
+					function(cmp)
+						if cmp.is_visible() then
+							local entry = cmp.get_selected_item()
+
+							if not entry then
+								return cmp.select_and_accept()
+							else
+								return cmp.accept()
+							end
+						end
+					end,
+					"fallback",
+				},
+				["<CR>"] = {
+					--- Accept selected entry, else insert new line.
+					function(cmp)
+						print(cmp.is_menu_visible(), ",", cmp.get_selected_item())
+						if cmp.is_menu_visible() and cmp.get_selected_item() then
+							return cmp.accept()
+						end
+					end,
+					"fallback",
+				},
 			},
 			signature = { enabled = true },
 			sources = {
