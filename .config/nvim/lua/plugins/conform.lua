@@ -1,5 +1,6 @@
 return {
 	"stevearc/conform.nvim",
+	version = "v9.0.x",
 	event = { "BufWritePre" },
 	cmd = { "ConformInfo" },
 	keys = {
@@ -16,6 +17,8 @@ return {
 			desc = "Format buffer",
 		},
 	},
+	---@module 'conform.nvim'
+	---@type conform.setupOpts
 	opts = {
 		formatters_by_ft = {
 			lua = { "stylua" },

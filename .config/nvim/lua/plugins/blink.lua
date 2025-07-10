@@ -1,6 +1,7 @@
 return {
 	{
 		"folke/lazydev.nvim",
+		version = "v1.9.x",
 		ft = "lua",
 		opts = {
 			library = {
@@ -11,10 +12,10 @@ return {
 	{ "L3MON4D3/LuaSnip", keys = {} },
 	{
 		"Saghen/blink.cmp",
+		version = "v1.4.*",
 		dependencies = {
 			"rafamadriz/friendly-snippets",
 		},
-		version = "1.*",
 		---@module 'blink.cmp'
 		---@type blink.cmp.Config
 		opts = {
