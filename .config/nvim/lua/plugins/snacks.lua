@@ -158,42 +158,48 @@ return {
 		-- LSP
 		{
 			"gd",
+			--- Jump to the definition of the word under your cursor.
 			function()
 				Snacks.picker.lsp_definitions()
 			end,
-			desc = "Goto Definition",
+			desc = "[G]oto [D]efinition",
 		},
 		{
 			"gD",
+			--- Jump to the declarations of the word under your cursor.
 			function()
 				Snacks.picker.lsp_declarations()
 			end,
-			desc = "Goto Declaration",
+			desc = "[G]oto [D]eclaration",
 		},
 		{
 			"gr",
+			--- Jump to the references of the word under your cursor.
 			function()
 				Snacks.picker.lsp_references()
 			end,
 			nowait = true,
-			desc = "References",
+			desc = "[G]oto [R]eferences",
 		},
 		{
 			"gI",
+			--- Jump to the implementations of the word under your cursor.
 			function()
 				Snacks.picker.lsp_implementations()
 			end,
-			desc = "Goto Implementation",
+			desc = "[G]oto [I]mplementation",
 		},
 		{
 			"gy",
+			--- Jump to the type definition of the word under your cursor.
 			function()
 				Snacks.picker.lsp_type_definitions()
 			end,
-			desc = "Goto T[y]pe Definition",
+			desc = "[G]oto T[y]pe Definition",
 		},
 		{
 			"<leader>ss",
+			--- Fuzzy find all the symbols in your current document.
 			function()
 				Snacks.picker.lsp_symbols()
 			end,
@@ -201,6 +207,7 @@ return {
 		},
 		{
 			"<leader>sS",
+			--- Fuzzy find all the symbols in your current project.
 			function()
 				Snacks.picker.lsp_workspace_symbols()
 			end,
