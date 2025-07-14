@@ -1,27 +1,16 @@
 local blink = require("blink.cmp")
 
--- Function to get TypeScript SDK path (prefer local, fallback to global)
-local function get_typescript_sdk()
-	local local_sdk = vim.fn.getcwd() .. "/node_modules/typescript/lib"
-	if vim.fn.isdirectory(local_sdk) == 1 then
-		return local_sdk
-	end
-
-	-- Try global installation
-	local global_root = vim.fn.system("npm root -g"):gsub("\n", ""):gsub("\r", "")
-	local global_sdk = global_root .. "/typescript/lib"
-	if vim.fn.isdirectory(global_sdk) == 1 then
-		return global_sdk
-	end
-
-	-- If both fail, return nil to let vue-language-server find it automatically
-	return nil
-end
-
 return {
 	cmd = { "vue-language-server", "--stdio" },
 	filetypes = { "vue" },
 	root_markers = { "package.json", "tsconfig.json", "jsconfig.json", ".git" },
+	capabilities = vim.tbl_deep_extend(
+		"force",
+		{},
+		vim.lsp.protocol.make_client_capabilities(),
+		blink.get_lsp_capabilities()
+	),
+	--- From the wiki https://github.com/vuejs/language-tools/wiki/Neovim
 	on_init = function(client)
 		client.handlers["tsserver/request"] = function(_, result, context)
 			local clients = vim.lsp.get_clients({ bufnr = context.bufnr, name = "vtsls" })
@@ -34,7 +23,7 @@ return {
 			local param = unpack(result)
 			local id, command, payload = unpack(param)
 			ts_client:exec_cmd({
-				title = "vue_request_forward", -- You can give title anything as it's used to represent a command in the UI, `:h Client:exec_cmd`
+				title = "vue_request_forward",
 				command = "typescript.tsserverRequest",
 				arguments = {
 					command,
@@ -47,14 +36,4 @@ return {
 			end)
 		end
 	end,
-	settings = {
-		-- Remove TypeScript-specific settings to avoid conflicts with ts-ls
-		-- Let the TypeScript Language Server handle TypeScript features
-	},
-	capabilities = vim.tbl_deep_extend(
-		"force",
-		{},
-		vim.lsp.protocol.make_client_capabilities(),
-		blink.get_lsp_capabilities()
-	),
 }
