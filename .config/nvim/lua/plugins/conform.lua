@@ -28,6 +28,9 @@ return {
 			vue = { "prettierd" },
 			html = { "prettierd" },
 			json = { "prettierd" },
+			css = { "prettierd" },
+			scss = { "prettierd" },
+			markdown = { "prettierd" },
 
 			xml = { "xmlformatter" },
 		},
