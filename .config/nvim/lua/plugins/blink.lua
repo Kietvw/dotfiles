@@ -28,8 +28,12 @@ return {
 				},
 				documentation = {
 					auto_show = true,
+					window = {
+						border = "rounded",
+					},
 				},
 				menu = {
+					border = "rounded",
 					draw = {
 						columns = {
 							{ "kind_icon" },
@@ -46,6 +50,8 @@ return {
 				["<C-f>"] = { "scroll_documentation_down", "fallback" },
 				["<C-j>"] = { "select_next", "fallback" },
 				["<C-k>"] = { "select_prev", "fallback" },
+				["<C-h>"] = { "scroll_documentation_up", "fallback" },
+				["<C-l>"] = { "scroll_documentation_down", "fallback" },
 				["<Tab>"] = {
 					--- Accept selection, else select first option.
 					function(cmp)
