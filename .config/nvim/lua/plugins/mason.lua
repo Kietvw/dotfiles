@@ -3,6 +3,25 @@ return {
 	version = "v2.0.x",
 	dependencies = {
 		{
+			"WhoIsSethDaniel/mason-tool-installer.nvim",
+			opts = {
+				---@type string[]
+				ensure_installed = {
+					"lua_ls",
+					"stylua",
+
+					"ts_ls",
+					"vtsls",
+					"vue_ls",
+					"prettierd",
+
+					"intelephense",
+					"phpstan",
+					"phpcs",
+				},
+			},
+		},
+		{
 			"mason-org/mason.nvim",
 			version = "v2.0.x",
 			opts = {},
@@ -10,13 +29,11 @@ return {
 	},
 	build = ":MasonUpdate",
 	opts = {
-		automatic_enable = false,
-		ensure_installed = {
-			"lua_ls",
-			"intelephense",
-			"ts_ls",
-			"vtsls",
-			"vue_ls",
+		automatic_enable = {
+			"prettierd",
+			"phpstan",
+			"phpcs",
+			"stylua",
 		},
 	},
 }
