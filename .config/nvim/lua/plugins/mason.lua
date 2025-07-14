@@ -15,6 +15,7 @@ return {
 			"lua_ls",
 			"intelephense",
 			"ts_ls",
+			"vtsls",
 			"vue_ls",
 		},
 	},

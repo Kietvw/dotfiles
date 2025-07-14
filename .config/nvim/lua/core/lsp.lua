@@ -1,7 +1,7 @@
 vim.lsp.enable({
 	"lua_ls",
-	-- Let ts_ls handles both vue and typescript
-	-- "vue_ls",
+	"vtsls",
+	"vue_ls",
 	"ts_ls",
 	-- "phpactor",
 	"intelephense",
