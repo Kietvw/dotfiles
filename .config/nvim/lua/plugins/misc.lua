@@ -39,4 +39,8 @@ return {
 			}
 		end,
 	},
+	{
+		"MeanderingProgrammer/render-markdown.nvim",
+		ft = { "markdown" },
+	},
 }
