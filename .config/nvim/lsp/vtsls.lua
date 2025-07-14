@@ -13,10 +13,6 @@ local vue_plugin = {
 return {
 	cmd = { "vtsls", "--stdio" },
 	filetypes = {
-		"typescript",
-		"javascript",
-		"javascriptreact",
-		"typescriptreact",
 		"vue",
 	},
 	root_markers = { "tsconfig.json", "package.json", "jsconfig.json", ".git" },
