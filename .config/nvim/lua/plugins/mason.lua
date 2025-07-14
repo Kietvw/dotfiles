@@ -18,6 +18,8 @@ return {
 					"intelephense",
 					"phpstan",
 					"phpcs",
+
+					"xmlformatter",
 				},
 			},
 		},
