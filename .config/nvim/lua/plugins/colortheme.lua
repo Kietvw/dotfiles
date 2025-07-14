@@ -33,8 +33,8 @@ return {
 				overrides = function(colors)
 					local custom_colors = {
 						white = "#ffffff",
-						lightyellow = "#dcdbad",
-						lightblue = "#a2ddfc",
+						lightyellow = "#dcdcaa",
+						lightblue = "#9cdcfe",
 					}
 
 					-- VSCode like theme.
@@ -88,15 +88,15 @@ return {
 					bg_highlight = "#3c4048", -- #3c4048
 					fg = "#ffffff", -- #ffffff
 					grey = "#7b8496", -- #7b8496
-					blue = "#5e9ed3", -- #5ea1ff
+					blue = "#569cd6", -- #5ea1ff
 					green = "#7fa56b", -- #5eff6c
 					cyan = "#5ec9b0", -- #5ef1ff
 					red = "#ff6e5e", -- #ff6e5e
-					yellow = "#fcd534", -- #f1ff5e
+					yellow = "#ffd700", -- #f1ff5e
 					magenta = "#ff5ef1", -- #ff5ef1
 					pink = "#ff5ea0", -- #ff5ea0
-					orange = "#ca907a", -- #ffbd5e
-					purple = "#d572d3", -- #bd5eff
+					orange = "#ce9178", -- #ffbd5e
+					purple = "#c586c0", -- #bd5eff
 				},
 
 				-- Disable or enable colorscheme extensions
