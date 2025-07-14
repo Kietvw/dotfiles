@@ -27,7 +27,6 @@ return {
 			},
 		},
 		scope = { enabled = true },
-		statuscolumn = { enabled = true },
 		terminal = { enabled = true },
 		zen = { enabled = true },
 	},
