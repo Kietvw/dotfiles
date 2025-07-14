@@ -30,4 +30,13 @@ return {
 			require("nvim-highlight-colors").setup({})
 		end,
 	},
+	{
+		"kkoomen/vim-doge",
+		config = function()
+			vim.g.doge_javascript_settings = {
+				destructuring_props = 1,
+				omit_redundant_param_types = 1,
+			}
+		end,
+	},
 }
