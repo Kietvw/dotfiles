@@ -32,6 +32,7 @@ return {
 	},
 	{
 		"kkoomen/vim-doge",
+		version = "v4.7.x",
 		config = function()
 			vim.g.doge_javascript_settings = {
 				destructuring_props = 1,
@@ -42,5 +43,6 @@ return {
 	{
 		"MeanderingProgrammer/render-markdown.nvim",
 		ft = { "markdown" },
+		version = "v8.6.x",
 	},
 }
