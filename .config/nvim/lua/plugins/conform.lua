@@ -5,7 +5,7 @@ return {
 	cmd = { "ConformInfo" },
 	keys = {
 		{
-			"<leader>f",
+			"<leader>a",
 			function()
 				require("conform").format({ async = true }, function(err, did_edit)
 					if not err and did_edit then
