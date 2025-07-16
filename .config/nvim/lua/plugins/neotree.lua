@@ -174,7 +174,6 @@ return {
 					hide_gitignored = false,
 					hide_hidden = false, -- only works on Windows for hidden files/directories
 					hide_by_name = {
-						".DS_Store",
 						"thumbs.db",
 						"node_modules",
 						".svn",
@@ -185,6 +184,8 @@ return {
 						".python-version",
 						".venv",
 						".github",
+						"dist",
+						".nuxt"
 					},
 					hide_by_pattern = { -- uses glob style patterns
 						--"*.meta",
@@ -194,7 +195,7 @@ return {
 						--".gitignored",
 					},
 					never_show = { -- remains hidden even if visible is toggled to true, this overrides always_show
-						--".DS_Store",
+						".DS_Store",
 						--"thumbs.db"
 					},
 					never_show_by_pattern = { -- uses glob style patterns
@@ -288,14 +289,6 @@ return {
 						["os"] = { "order_by_size", nowait = false },
 						["ot"] = { "order_by_type", nowait = false },
 					},
-				},
-			},
-			event_handlers = {
-				{
-					event = "file_opened",
-					handler = function()
-						vim.cmd([[Neotree close]])
-					end,
 				},
 			},
 		})
