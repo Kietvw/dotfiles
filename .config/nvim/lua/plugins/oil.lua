@@ -1,5 +1,6 @@
 return {
 	"stevearc/oil.nvim",
+	version = "2.15.x",
 	dependencies = { "nvim-tree/nvim-web-devicons" },
 	lazy = false,
 	---@module 'oil'
