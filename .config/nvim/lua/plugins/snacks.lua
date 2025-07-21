@@ -27,8 +27,15 @@ return {
 		layout = { enabled = true },
 		lazygit = { enabled = true },
 		-- notifier = {enabled = true }
+		---@class snacks.picker.Config
 		picker = {
 			enabled = true,
+			exclude = {
+				".svn/**/*",
+				".svn-base",
+				"package-lock.json",
+				"composer.lock",
+			},
 			sources = {
 				files = { hidden = true },
 				grep = { hidden = true },
