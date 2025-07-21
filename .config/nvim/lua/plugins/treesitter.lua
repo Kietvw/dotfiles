@@ -20,6 +20,7 @@ return { -- Highlight, edit, and navigate code
 				"css",
 				"scss",
 				"php",
+				"regex",
 			},
 			auto_install = false,
 		})
