@@ -5,6 +5,32 @@ return {
 		lazy = false,
 		priority = 1000,
 		config = function()
+			--- cyberdream colors
+			local _cyberdream = {
+				bg = "#000000", -- #16181a
+				bg_alt = "#1e2124", -- #1e2124
+				bg_highlight = "#3c4048", -- #3c4048
+				fg = "#ffffff", -- #ffffff
+				grey = "#7b8496", -- #7b8496
+				blue = "#569cd6", -- #5ea1ff
+				green = "#7ca668", -- #5eff6c
+				cyan = "#5ec9b0", -- #5ef1ff
+				red = "#ff6e5e", -- #ff6e5e
+				yellow = "#ffd700", -- #f1ff5e
+				magenta = "#ff5ef1", -- #ff5ef1
+				pink = "#ff5ea0", -- #ff5ea0
+				orange = "#ce9178", -- #ffbd5e
+				purple = "#c586c0", -- #bd5eff
+			}
+			--- custom colors
+			local custom_colors = {
+				white = "#ffffff",
+				lightgrey = "#d4d4d4",
+				lightyellow = "#dcdcaa",
+				lightblue = "#9cdcfe",
+				lightgreen = "#b5cea8",
+				matrix = "#00ff41",
+			}
 			require("cyberdream").setup({
 				-- Set light or dark variant
 				variant = "default",
@@ -29,17 +55,7 @@ return {
 
 				-- Improve start up time by caching highlights. Generate cache with :CyberdreamBuildCache and clear with :CyberdreamClearCache
 				cache = false,
-
 				overrides = function(colors)
-					local custom_colors = {
-						white = "#ffffff",
-						lightgrey = "#d4d4d4",
-						lightyellow = "#dcdcaa",
-						lightblue = "#9cdcfe",
-						lightgreen = "#b5cea8",
-						matrix = "#00ff41",
-					}
-
 					-- VSCode like theme.
 					return {
 						Comment = { fg = colors.green, bg = "NONE", italic = false },
@@ -95,22 +111,7 @@ return {
 				end,
 
 				-- Override colors
-				colors = {
-					bg = "#000000", -- #16181a
-					bg_alt = "#1e2124", -- #1e2124
-					bg_highlight = "#3c4048", -- #3c4048
-					fg = "#ffffff", -- #ffffff
-					grey = "#7b8496", -- #7b8496
-					blue = "#569cd6", -- #5ea1ff
-					green = "#7ca668", -- #5eff6c
-					cyan = "#5ec9b0", -- #5ef1ff
-					red = "#ff6e5e", -- #ff6e5e
-					yellow = "#ffd700", -- #f1ff5e
-					magenta = "#ff5ef1", -- #ff5ef1
-					pink = "#ff5ea0", -- #ff5ea0
-					orange = "#ce9178", -- #ffbd5e
-					purple = "#c586c0", -- #bd5eff
-				},
+				colors = _cyberdream,
 
 				-- Disable or enable colorscheme extensions
 				extensions = {
