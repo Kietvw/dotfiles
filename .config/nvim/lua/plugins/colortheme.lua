@@ -33,8 +33,11 @@ return {
 				overrides = function(colors)
 					local custom_colors = {
 						white = "#ffffff",
+						lightgrey = "#d4d4d4",
 						lightyellow = "#dcdcaa",
 						lightblue = "#9cdcfe",
+						lightgreen = "#b5cea8",
+						matrix = "#00ff41",
 					}
 
 					-- VSCode like theme.
@@ -45,9 +48,11 @@ return {
 						["@boolean"] = { fg = colors.blue },
 						["@constructor"] = { fg = colors.cyan },
 						["@constant"] = { fg = custom_colors.white },
+						["@constant.scss"] = { fg = custom_colors.lightyellow },
 						["@constant.builtin"] = { fg = colors.blue },
 						["@function"] = { fg = custom_colors.lightyellow },
 						["@function.call"] = { fg = custom_colors.lightyellow },
+						["@property.scss"] = { fg = custom_colors.lightgrey },
 						["@punctuation.bracket"] = { fg = colors.yellow },
 						["@punctuation.bracket.alt"] = { fg = colors.red },
 						["@punctuation.special"] = { fg = colors.blue },
@@ -65,19 +70,27 @@ return {
 						["@keyword.modifier"] = { fg = colors.blue },
 						["@keyword.coroutine"] = { fg = colors.purple },
 						["@tag"] = { fg = colors.blue },
-						["@tag.delimeter"] = { fg = colors.grey },
+						["@tag.delimiter"] = { fg = colors.grey },
 						["@type.builtin"] = { fg = colors.cyan },
 						["@type.builtin.php"] = { fg = colors.blue },
+						["@type.scss"] = { fg = custom_colors.lightyellow },
 						["@operator"] = { fg = custom_colors.white },
 						["@module"] = { fg = colors.cyan },
-						["@number"] = { fg = colors.green },
+						["@number"] = { fg = custom_colors.lightgreen },
+						["@number.float"] = { fg = custom_colors.lightgreen },
 						["@string"] = { fg = colors.orange },
 						["@string.regexp"] = { fg = colors.red },
 						["@string.escape"] = { fg = colors.blue },
+						["@string.scss"] = { fg = colors.orange },
 						["@variable"] = { fg = custom_colors.lightblue },
+						["@variable.scss"] = { fg = custom_colors.lightgrey },
+						["@variable.parameter.scss"] = { fg = custom_colors.lightgrey },
 						["@variable.builtin"] = { fg = colors.blue },
 						["@variable.member"] = { fg = custom_colors.lightblue },
 						["@variable.parameter.php"] = { fg = custom_colors.white },
+
+						SnacksDashboardHeader = { fg = custom_colors.matrix },
+						SnacksIndentScope = { fg = colors.grey },
 					}
 				end,
 
@@ -89,7 +102,7 @@ return {
 					fg = "#ffffff", -- #ffffff
 					grey = "#7b8496", -- #7b8496
 					blue = "#569cd6", -- #5ea1ff
-					green = "#7fa56b", -- #5eff6c
+					green = "#7ca668", -- #5eff6c
 					cyan = "#5ec9b0", -- #5ef1ff
 					red = "#ff6e5e", -- #ff6e5e
 					yellow = "#ffd700", -- #f1ff5e
