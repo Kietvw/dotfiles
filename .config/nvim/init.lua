@@ -1,4 +1,4 @@
-require('core.lsp')
+require("core.lsp")
 
 require("config.options")
 require("config.keymaps")
