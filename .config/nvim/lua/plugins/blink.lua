@@ -12,7 +12,7 @@ return {
 	{ "L3MON4D3/LuaSnip", keys = {} },
 	{
 		"Saghen/blink.cmp",
-		version = "v1.4.*",
+		version = "v1.5.*",
 		dependencies = {
 			"rafamadriz/friendly-snippets",
 		},
@@ -70,7 +70,6 @@ return {
 				["<CR>"] = {
 					--- Accept selected entry, else insert new line.
 					function(cmp)
-						print(cmp.is_menu_visible(), ",", cmp.get_selected_item())
 						if cmp.is_menu_visible() and cmp.get_selected_item() then
 							return cmp.accept()
 						end
