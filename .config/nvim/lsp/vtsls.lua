@@ -14,6 +14,8 @@ return {
 	cmd = { "vtsls", "--stdio" },
 	filetypes = {
 		"vue",
+		"typescript",
+		"javascript",
 	},
 	root_markers = { "tsconfig.json", "package.json", "jsconfig.json", ".git" },
 	capabilities = vim.tbl_deep_extend(
