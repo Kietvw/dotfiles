@@ -86,6 +86,7 @@ return {
 						["@keyword.modifier"] = { fg = colors.blue },
 						["@keyword.coroutine"] = { fg = colors.purple },
 						["@tag"] = { fg = colors.blue },
+						["@tag.scss"] = { fg = custom_colors.lightyellow },
 						["@tag.delimiter"] = { fg = colors.grey },
 						["@type.builtin"] = { fg = colors.cyan },
 						["@type.builtin.php"] = { fg = colors.blue },

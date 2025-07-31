@@ -3,6 +3,7 @@ return {
 	version = "v2.22.x",
 	priority = 1000,
 	lazy = false,
+	---@module 'snacks'
 	---@type snacks.Config
 	opts = {
 		bigfile = { enabled = true },
@@ -44,6 +45,7 @@ return {
 		},
 		scope = { enabled = true },
 		terminal = { enabled = true },
+		---@class snacks.zen.Config
 		zen = { enabled = true },
 	},
 	keys = {
