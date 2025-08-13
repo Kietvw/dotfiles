@@ -1,41 +1,23 @@
-return {
-	"mason-org/mason-lspconfig.nvim",
-	version = "v2.1.x",
-	dependencies = {
-		{
-			"WhoIsSethDaniel/mason-tool-installer.nvim",
-			opts = {
-				---@type string[]
-				ensure_installed = {
-					"lua_ls",
-					"stylua",
+vim.pack.add({
+	{ src = "https://github.com/neovim/nvim-lspconfig" },
+	{ src = "https://github.com/mason-org/mason.nvim" },
+	{ src = "https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim" },
+})
 
-					"ts_ls",
-					"vtsls",
-					"vue_ls",
-					"prettierd",
+require("mason-tool-installer").setup({
+	ensure_installed = {
+		"lua-language-server",
+		"stylua",
 
-					"intelephense",
-					"phpstan",
-					"phpcs",
+		"prettierd",
+		"typescript-language-server",
+		"vue-language-server",
+		"vtsls",
 
-					"xmlformatter",
-				},
-			},
-		},
-		{
-			"mason-org/mason.nvim",
-			version = "v2.0.x",
-			opts = {},
-		},
+		"intelephense",
+		"phpcs",
+		"phpstan",
 	},
-	build = ":MasonUpdate",
-	opts = {
-		automatic_enable = {
-			"prettierd",
-			"phpstan",
-			"phpcs",
-			"stylua",
-		},
-	},
-}
+})
+
+require("mason").setup()

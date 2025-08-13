@@ -1,6 +1,14 @@
-require("core.lsp")
+require('core.lsp')
 
-require("config.options")
-require("config.keymaps")
+require('config.options')
+require('config.keymaps')
 
-require("core.lazy")
+require('plugins.theme')
+require('plugins.conform')
+require('plugins.blink')
+require('plugins.oil')
+require('plugins.mason')
+require('plugins.minipick')
+require('plugins.treesitter')
+require('plugins.misc')
+require('plugins.lazygit')
