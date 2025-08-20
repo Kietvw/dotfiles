@@ -1,5 +1,5 @@
 vim.pack.add({
-	"https://github.com/stevearc/oil.nvim",
+	{ src = "https://github.com/stevearc/oil.nvim", version = vim.version.range("2.15") },
 })
 
 require("oil").setup({
