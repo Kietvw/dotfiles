@@ -6,3 +6,5 @@ vim.pack.add({ "https://github.com/tpope/vim-surround" })
 vim.pack.add({ "https://github.com/justinmk/vim-sneak" })
 
 vim.pack.add({ "https://github.com/tpope/vim-sleuth" })
+
+vim.pack.add({ "https://github.com/lewis6991/gitsigns.nvim" })
