@@ -6,9 +6,6 @@ local actions = require("oil.actions")
 
 require("oil").setup({
 	default_file_explorer = true,
-	view_options = {
-		show_hidden = true,
-	},
 	keymaps = {
 		["<C-h>"] = false,
 		["<C-j>"] = false,
