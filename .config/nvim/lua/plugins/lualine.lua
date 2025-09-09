@@ -10,7 +10,7 @@ local mode = {
 local filename = {
 	"filename",
 	file_status = true,
-	path = 0,
+	path = 1,
 }
 
 local hide_in_width = function()
