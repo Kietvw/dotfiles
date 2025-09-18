@@ -3,7 +3,9 @@ vim.lsp.enable({
 	-- "ts_ls",
 	"vtsls",
 	"vue_ls",
-	"phptools",
+	"phpactor",
+	-- "intelephense",
+	-- "phptools",
 })
 
 vim.api.nvim_create_autocmd("LspAttach", {
