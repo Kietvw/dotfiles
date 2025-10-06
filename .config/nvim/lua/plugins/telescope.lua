@@ -22,6 +22,9 @@ telescope.setup({
 telescope.load_extension("fzy_native")
 
 vim.keymap.set("n", "<leader>sf", builtin.find_files)
+vim.keymap.set("n", "<leader>sF", function()
+	builtin.find_files({ hidden = true, no_ignore = false })
+end)
 vim.keymap.set("n", "<leader>sg", builtin.live_grep)
 vim.keymap.set("n", "<leader>sW", function()
 	builtin.live_grep({
