@@ -7,11 +7,13 @@
     },
     "bufferline.nvim": {
       "rev": "655133c",
-      "src": "https://github.com/akinsho/bufferline.nvim"
+      "src": "https://github.com/akinsho/bufferline.nvim",
+      "version": "4.9.0 - 4.10.0"
     },
     "conform.nvim": {
-      "rev": "9d859cb",
-      "src": "https://github.com/stevearc/conform.nvim"
+      "rev": "3543d00",
+      "src": "https://github.com/stevearc/conform.nvim",
+      "version": "9.1.0 - 9.2.0"
     },
     "cyberdream.nvim": {
       "rev": "eba11f5",
@@ -35,14 +37,19 @@
     },
     "mason.nvim": {
       "rev": "ad7146a",
-      "src": "https://github.com/mason-org/mason.nvim"
+      "src": "https://github.com/mason-org/mason.nvim",
+      "version": "2.1.0 - 2.2.0"
     },
     "mini.pairs": {
       "rev": "b9aada8",
       "src": "https://github.com/echasnovski/mini.pairs"
     },
+    "nvim-lint": {
+      "rev": "9da1fb9",
+      "src": "https://github.com/mfussenegger/nvim-lint"
+    },
     "nvim-lspconfig": {
-      "rev": "e688b48",
+      "rev": "ac98db2",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-treesitter": {
@@ -54,9 +61,8 @@
       "src": "https://github.com/nvim-tree/nvim-web-devicons"
     },
     "oil.nvim": {
-      "rev": "975a77c",
-      "src": "https://github.com/stevearc/oil.nvim",
-      "version": "2.15.0 - 2.16.0"
+      "rev": "919e155",
+      "src": "https://github.com/stevearc/oil.nvim"
     },
     "plenary.nvim": {
       "rev": "b9fd522",
@@ -76,8 +82,9 @@
       "src": "https://github.com/tpope/vim-sleuth"
     },
     "vim-sneak": {
-      "rev": "18b1faf",
-      "src": "https://github.com/justinmk/vim-sneak"
+      "rev": "29ec916",
+      "src": "https://github.com/justinmk/vim-sneak",
+      "version": "1.10.0 - 1.11.0"
     },
     "vim-surround": {
       "rev": "3d188ed",

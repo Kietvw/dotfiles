@@ -1,21 +1,23 @@
-vim.pack.add({
-	{ src = "https://github.com/stevearc/conform.nvim" },
-})
-
 local conform = require("conform")
 
 conform.setup({
 	formatters_by_ft = {
 		lua = { "stylua" },
 
-		javascript = { "prettierd" },
-		typescript = { "prettierd" },
-		vue = { "prettierd" },
+		angular = { "prettierd" },
+		css = { "prettierd" },
+		flow = { "prettierd" },
+		graphql = { "prettierd" },
 		html = { "prettierd" },
 		json = { "prettierd" },
-		css = { "prettierd" },
-		scss = { "prettierd" },
+		jsx = { "prettierd" },
+		javascript = { "prettierd" },
+		less = { "prettierd" },
 		markdown = { "prettierd" },
+		scss = { "prettierd" },
+		typescript = { "prettierd" },
+		vue = { "prettierd" },
+		yaml = { "prettierd" },
 	},
 	default_format_opts = {
 		lsp_format = "fallback",

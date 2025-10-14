@@ -1,8 +1,3 @@
-vim.pack.add({
-	{ src = "https://github.com/scottmckendry/cyberdream.nvim" },
-	{ src = "https://github.com/nvim-tree/nvim-web-devicons" },
-})
-
 --- cyberdream colors
 local _cyberdream = {
 	bg = "#000000", -- #16181a

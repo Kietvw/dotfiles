@@ -1,7 +1,3 @@
-vim.pack.add({
-	{ src = "https://github.com/Saghen/blink.cmp", version = vim.version.range("1.7") },
-})
-
 require("blink.cmp").setup({
 	completion = {
 		list = {
@@ -32,22 +28,6 @@ require("blink.cmp").setup({
 		["<C-k>"] = { "select_prev", "fallback" },
 		["<C-h>"] = { "scroll_documentation_up", "fallback" },
 		["<C-l>"] = { "scroll_documentation_down", "fallback" },
-		-- ["<Tab>"] = {
-		-- 	--- Accept selection, else select first option.
-		-- 	function(cmp)
-		-- 		if cmp.is_visible() then
-		-- 			local entry = cmp.get_selected_item()
-		-- 			cmp.show_signature()
-		--
-		-- 			if not entry then
-		-- 				return cmp.select_and_accept()
-		-- 			else
-		-- 				return cmp.accept()
-		-- 			end
-		-- 		end
-		-- 	end,
-		-- 	"fallback",
-		-- },
 		["<CR>"] = {
 			--- Accept selected entry, else insert new line.
 			function(cmp)

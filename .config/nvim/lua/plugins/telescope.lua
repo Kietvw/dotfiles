@@ -1,10 +1,3 @@
-vim.pack.add({
-	{ src = "https://github.com/nvim-telescope/telescope.nvim", version = vim.version.range("0.1") },
-	-- dependencies
-	{ src = "https://github.com/nvim-lua/plenary.nvim" },
-	{ src = "https://github.com/nvim-telescope/telescope-fzy-native.nvim" },
-})
-
 local telescope = require("telescope")
 local actions = require("telescope.actions")
 local builtin = require("telescope.builtin")

@@ -3,36 +3,28 @@
   "contributes": {
     "snippets": [
       {
-        "language": [
-          "javascript"
-        ],
+        "language": "javascript",
         "path": "./javascript.json"
       },
       {
-        "language": [
-          "typescript"
-        ],
+        "language": "typescript",
         "path": "./typescript.json"
       },
       {
-        "language": [
-          "vue"
-        ],
+        "language": "vue",
         "path": "./vue.json"
       },
       {
-        "language": [
-          "typescript",
-          "vue"
-        ],
+        "language": "vue,typescript",
         "path": "./vuets.json"
       },
       {
-        "language": [
-          "javascript",
-          "vue"
-        ],
-        "path": "./jsvue.json"
+        "language": "vue,javascript",
+        "path": "./vuejs.json"
+      },
+      {
+        "language": "vue,javascript,typescript",
+        "path": "./anyscript.json"
       }
     ]
   }
