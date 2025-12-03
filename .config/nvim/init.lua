@@ -23,7 +23,7 @@ vim.pack.add({
 
 	-- code editing
 	{ src = "https://github.com/stevearc/conform.nvim", version = vim.version.range("9.1") },
-	{ src = "https://github.com/Saghen/blink.cmp", version = vim.version.range("1.7") },
+	{ src = "https://github.com/Saghen/blink.cmp", version = vim.version.range("1.8") },
 
 	-- file tree
 	{ src = "https://github.com/stevearc/oil.nvim" },
