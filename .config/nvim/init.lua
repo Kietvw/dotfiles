@@ -21,9 +21,10 @@ vim.pack.add({
 	{ src = "https://github.com/nvim-lua/plenary.nvim" },
 	{ src = "https://github.com/nvim-telescope/telescope-fzy-native.nvim" },
 
-	-- code editing
+	-- code assist
 	{ src = "https://github.com/stevearc/conform.nvim", version = vim.version.range("9.1") },
 	{ src = "https://github.com/Saghen/blink.cmp", version = vim.version.range("1.8") },
+	{ src = "https://github.com/mfussenegger/nvim-lint" },
 
 	-- file tree
 	{ src = "https://github.com/stevearc/oil.nvim" },
