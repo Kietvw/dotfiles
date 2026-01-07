@@ -73,10 +73,10 @@ vim.keymap.set("n", "<leader>se", "<C-w>=", opts) -- make split windows equal wi
 vim.keymap.set("n", "<leader>w", ":close<CR>", opts) -- close current split window
 
 -- Navigate between splits
-vim.keymap.set("n", "<C-k>", ":wincmd k<CR>", opts)
-vim.keymap.set("n", "<C-j>", ":wincmd j<CR>", opts)
-vim.keymap.set("n", "<C-h>", ":wincmd h<CR>", opts)
-vim.keymap.set("n", "<C-l>", ":wincmd l<CR>", opts)
+vim.api.nvim_set_keymap("n", "<C-h>", "<C-w>h", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<C-j>", "<C-w>j", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<C-k>", "<C-w>k", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<C-l>", "<C-w>l", { noremap = true, silent = true })
 
 -- Tabs
 vim.keymap.set("n", "<leader>to", ":tabnew<CR>", opts) -- open new tab
