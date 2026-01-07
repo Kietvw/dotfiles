@@ -37,7 +37,7 @@ vim.pack.add({
 	{ src = "https://github.com/lewis6991/gitsigns.nvim" },
 	{ src = "https://github.com/tpope/vim-sleuth" },
 	{ src = "https://github.com/tpope/vim-surround" },
-	{ src = "https://github.com/justinmk/vim-sneak", version = vim.version.range("1.10") },
+	{ src = "https://github.com/justinmk/vim-sneak", version = vim.version.range("1.11") },
 	{ src = "https://github.com/echasnovski/mini.pairs" },
 })
 
