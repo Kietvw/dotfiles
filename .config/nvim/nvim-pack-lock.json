@@ -1,84 +1,69 @@
 {
   "plugins": {
     "blink.cmp": {
-      "rev": "b19413d",
+      "rev": "4b18c32adef2898f95cdef6192cbd5796c1a332d",
       "src": "https://github.com/Saghen/blink.cmp",
-      "version": "1.8.0 - 1.9.0"
+      "version": "1.9.0 - 1.10.0"
     },
     "bufferline.nvim": {
-      "rev": "655133c",
+      "rev": "655133c3b4c3e5e05ec549b9f8cc2894ac6f51b3",
       "src": "https://github.com/akinsho/bufferline.nvim",
       "version": "4.9.0 - 4.10.0"
     },
     "conform.nvim": {
-      "rev": "3543d00",
+      "rev": "3543d000dafbc41cc7761d860cfdb24e82154f75",
       "src": "https://github.com/stevearc/conform.nvim",
       "version": "9.1.0 - 9.2.0"
     },
     "cyberdream.nvim": {
-      "rev": "a956559cda735fbc9f0b39541529386322afaedd",
-      "src": "https://github.com/scottmckendry/cyberdream.nvim"
+      "rev": "2ad7275b5edabfdd1fe9b8ecb90d7b1799c53d45",
+      "src": "https://github.com/scottmckendry/cyberdream.nvim",
+      "version": "5.3.0 - 5.4.0"
     },
     "gitsigns.nvim": {
-      "rev": "6bd29494e3f79ff08be1d35bc1926ed23c22ed9a",
-      "src": "https://github.com/lewis6991/gitsigns.nvim"
+      "rev": "42d6aed4e94e0f0bbced16bbdcc42f57673bd75e",
+      "src": "https://github.com/lewis6991/gitsigns.nvim",
+      "version": "2.0.0 - 2.1.0"
     },
     "lazygit.nvim": {
       "rev": "a04ad0dbc725134edbee3a5eea29290976695357",
       "src": "https://github.com/kdheepak/lazygit.nvim"
     },
     "lualine.nvim": {
-      "rev": "47f91c4",
+      "rev": "47f91c416daef12db467145e16bed5bbfe00add8",
       "src": "https://github.com/nvim-lualine/lualine.nvim"
     },
-    "mason-tool-installer.nvim": {
-      "rev": "517ef59",
-      "src": "https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim"
-    },
-    "mason.nvim": {
-      "rev": "ad7146a",
-      "src": "https://github.com/mason-org/mason.nvim",
-      "version": "2.1.0 - 2.2.0"
-    },
     "mini.pairs": {
-      "rev": "d5a29b6254dad07757832db505ea5aeab9aad43a",
+      "rev": "4089aa6ea6423e02e1a8326a7a7a00159f6f5e04",
       "src": "https://github.com/echasnovski/mini.pairs"
     },
+    "mini.pick": {
+      "rev": "4ad37ade984e69c43227b82ccdca5a92a22886de",
+      "src": "https://github.com/nvim-mini/mini.pick"
+    },
     "nvim-lint": {
-      "rev": "1e6b2ac034d1a7588d11b0b8e862a7ad89368376",
+      "rev": "a3d17105a79fc12055c2a0d732665d9c2b1c2dc3",
       "src": "https://github.com/mfussenegger/nvim-lint"
     },
     "nvim-lspconfig": {
-      "rev": "0b38bc74487e73489624d61396af7805af9cc75f",
-      "src": "https://github.com/neovim/nvim-lspconfig"
+      "rev": "44acfe887d4056f704ccc4f17513ed41c9e2b2e6",
+      "src": "https://github.com/neovim/nvim-lspconfig",
+      "version": "2.6.0 - 2.7.0"
     },
     "nvim-treesitter": {
-      "rev": "42fc28ba",
+      "rev": "4d9466677a5ceadef104eaa0fe08d60d91c4e9a7",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter"
     },
     "nvim-web-devicons": {
-      "rev": "6788013bb9cb784e606ada44206b0e755e4323d7",
+      "rev": "746ffbb17975ebd6c40142362eee1b0249969c5c",
       "src": "https://github.com/nvim-tree/nvim-web-devicons"
     },
     "oil.nvim": {
-      "rev": "81b8a91735ad5cd24a6b3137f14a89f19176364f",
+      "rev": "f55b25e493a7df76371cfadd0ded5004cb9cd48a",
       "src": "https://github.com/stevearc/oil.nvim"
     },
-    "plenary.nvim": {
-      "rev": "b9fd522",
-      "src": "https://github.com/nvim-lua/plenary.nvim"
-    },
-    "telescope-fzy-native.nvim": {
-      "rev": "282f069",
-      "src": "https://github.com/nvim-telescope/telescope-fzy-native.nvim"
-    },
-    "telescope.nvim": {
-      "rev": "84b9ba0",
-      "src": "https://github.com/nvim-telescope/telescope.nvim",
-      "version": "0.1.0 - 0.2.0"
-    },
     "vim-sleuth": {
-      "rev": "be69bff",
+      "rev": "be69bff86754b1aa5adcbb527d7fcd1635a84080",
       "src": "https://github.com/tpope/vim-sleuth"
     },
     "vim-sneak": {
@@ -87,7 +72,7 @@
       "version": "1.11.0 - 1.12.0"
     },
     "vim-surround": {
-      "rev": "3d188ed",
+      "rev": "3d188ed2113431cf8dac77be61b842acb64433d9",
       "src": "https://github.com/tpope/vim-surround"
     }
   }

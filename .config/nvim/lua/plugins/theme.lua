@@ -35,6 +35,7 @@ require("cyberdream").setup({
 			Comment = { fg = colors.green, bg = "NONE", italic = false },
 			Type = { fg = colors.cyan },
 			Identifier = { fg = custom_colors.lightblue },
+			Keyword = { fg = colors.blue },
 			["@boolean"] = { fg = colors.blue },
 			["@constructor"] = { fg = colors.cyan },
 			["@constant"] = { fg = custom_colors.white },

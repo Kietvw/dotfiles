@@ -12,7 +12,8 @@ telescope.setup({
 		},
 	},
 })
-telescope.load_extension("fzy_native")
+
+-- require('telescope').load_extension('fzy_native')
 
 vim.keymap.set("n", "<leader>sf", builtin.find_files)
 vim.keymap.set("n", "<leader>sF", function()
