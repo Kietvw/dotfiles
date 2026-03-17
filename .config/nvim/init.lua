@@ -12,7 +12,7 @@ vim.pack.add({
 
 	-- lsp and stuff
 	{ src = "https://github.com/nvim-treesitter/nvim-treesitter" },
-	{ src = "https://github.com/neovim/nvim-lspconfig", version = vim.version.range("2.6") },
+	{ src = "https://github.com/neovim/nvim-lspconfig", version = vim.version.range("2.7") },
 	-- { src = "https://github.com/mason-org/mason.nvim" },
 
 	-- File search
@@ -20,7 +20,7 @@ vim.pack.add({
 
 	-- code assist
 	{ src = "https://github.com/stevearc/conform.nvim", version = vim.version.range("9.1") },
-	{ src = "https://github.com/Saghen/blink.cmp", version = vim.version.range("1.9") },
+	{ src = "https://github.com/Saghen/blink.cmp", version = vim.version.range("1.10") },
 	{ src = "https://github.com/mfussenegger/nvim-lint" },
 
 	-- file tree
