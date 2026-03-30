@@ -36,6 +36,7 @@ vim.pack.add({
 	{ src = "https://github.com/tpope/vim-surround" },
 	{ src = "https://github.com/justinmk/vim-sneak", version = vim.version.range("1.11") },
 	{ src = "https://github.com/echasnovski/mini.pairs" },
+	{ src = "https://github.com/folke/zen-mode.nvim", version = vim.version.range("1.4") },
 })
 
 require("plugins.pick")
@@ -49,3 +50,5 @@ require("plugins.lint")
 require("plugins.bufferline")
 require("plugins.lualine")
 require("mini.pairs").setup()
+require("zen-mode")
+vim.api.nvim_set_keymap('n', '<leader>z', ':ZenMode<CR>', { noremap = true, silent = true })
