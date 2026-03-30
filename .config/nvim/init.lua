@@ -42,7 +42,7 @@ require("plugins.pick")
 require("plugins.treesitter")
 require("plugins.theme")
 require("bufferline").setup()
-require("lualine").setup()
+require("lualine").setup({})
 require("mini.pairs").setup()
 require("zen-mode")
 
