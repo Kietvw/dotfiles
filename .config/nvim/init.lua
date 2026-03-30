@@ -31,7 +31,7 @@ vim.pack.add({
 	{ src = "https://github.com/nvim-lualine/lualine.nvim" },
 
 	-- misc
-	{ src = "https://github.com/lewis6991/gitsigns.nvim", version = vim.version.range("2.0") },
+	{ src = "https://github.com/lewis6991/gitsigns.nvim", version = vim.version.range("2.1") },
 	{ src = "https://github.com/tpope/vim-sleuth" },
 	{ src = "https://github.com/tpope/vim-surround" },
 	{ src = "https://github.com/justinmk/vim-sneak", version = vim.version.range("1.11") },
