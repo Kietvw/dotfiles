@@ -1,7 +1,0 @@
-{
-  "New Promise": {
-    "prefix": ["newpromise"],
-    "body": ["new Promise((resolve, reject) => {", "\t$0", "})"],
-    "description": "Make new promise"
-  }
-}

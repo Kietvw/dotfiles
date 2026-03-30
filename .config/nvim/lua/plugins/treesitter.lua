@@ -1,4 +1,14 @@
-require("nvim-treesitter").install({ "vue" })
+require("nvim-treesitter").install({
+	"lua",
+	"vue",
+	"json",
+	"typescript",
+	"javascript",
+	"html",
+	"css",
+	"markdown",
+	"php",
+})
 
 vim.api.nvim_create_autocmd("FileType", {
 	pattern = {
