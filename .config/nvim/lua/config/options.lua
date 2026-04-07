@@ -40,3 +40,5 @@ vim.o.colorcolumn = "80"
 vim.o.title = true
 vim.o.winborder = "rounded"
 vim.o.fileformat = "unix"
+vim.o.foldmethod = "indent"
+vim.o.foldlevelstart=99
