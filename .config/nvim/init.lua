@@ -14,6 +14,7 @@ vim.pack.add({
 	-- Files
 	{ src = "https://github.com/stevearc/oil.nvim" },
 	{ src = "https://github.com/nvim-mini/mini.pick" },
+	{ src = "https://github.com/dmtrKovalenko/fff.nvim" },
 
 	-- Code assist
 	{ src = "https://github.com/stevearc/conform.nvim", version = vim.version.range("9.1") },
@@ -35,11 +36,12 @@ vim.pack.add({
 	{ src = "https://github.com/MeanderingProgrammer/render-markdown.nvim", version = vim.version.range("8.12") },
 })
 
-require("plugins.conform")
 require("plugins.blink")
+require("plugins.conform")
+require("plugins.fff")
 require("plugins.lint")
 require("plugins.oil")
-require("plugins.pick")
+-- require("plugins.pick")
 require("plugins.treesitter")
 require("plugins.theme")
 require("bufferline").setup()

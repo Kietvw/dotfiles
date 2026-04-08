@@ -20,6 +20,10 @@
       "src": "https://github.com/scottmckendry/cyberdream.nvim",
       "version": "5.3.0 - 5.4.0"
     },
+    "fff.nvim": {
+      "rev": "1c2c0633cdb933a9b4111d9e6dfa4a476a35ff9f",
+      "src": "https://github.com/dmtrKovalenko/fff.nvim"
+    },
     "gitsigns.nvim": {
       "rev": "a462f416e2ce4744531c6256252dee99a7d34a83",
       "src": "https://github.com/lewis6991/gitsigns.nvim",
