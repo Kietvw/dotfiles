@@ -5,8 +5,11 @@ vim.keymap.set("n", "<leader>o", ":update<CR> :source<CR>")
 -- Disable the spacebar key's default behavior in Normal and Visual modes
 vim.keymap.set({ "n", "v" }, "<Space>", "<Nop>", { silent = true })
 
--- save file
-vim.keymap.set("n", "<C-s>", "<cmd> w <CR>", opts)
+-- Save file & exit insert mode
+vim.keymap.set({ "n", "i" }, "<C-s>", function()
+	vim.cmd("stopinsert")
+	vim.cmd("w")
+end, opts)
 
 -- quit file
 vim.keymap.set("n", "<C-q>", "<cmd> q <CR>", opts)
