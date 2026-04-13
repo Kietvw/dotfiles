@@ -4,12 +4,12 @@ require("core.lsp")
 
 vim.pack.add({
 	-- Theme
-	{ src = "https://github.com/scottmckendry/cyberdream.nvim", version = vim.version.range("5.3") },
+	{ src = "https://github.com/scottmckendry/cyberdream.nvim", version = vim.version.range("5.4") },
 	{ src = "https://github.com/nvim-tree/nvim-web-devicons" },
 
 	-- Lsp
 	{ src = "https://github.com/nvim-treesitter/nvim-treesitter" },
-	{ src = "https://github.com/neovim/nvim-lspconfig", version = vim.version.range("2.7") },
+	{ src = "https://github.com/neovim/nvim-lspconfig", version = vim.version.range("2.8") },
 
 	-- Files
 	{ src = "https://github.com/stevearc/oil.nvim" },
