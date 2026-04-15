@@ -20,6 +20,7 @@ vim.pack.add({
 	{ src = "https://github.com/stevearc/conform.nvim", version = vim.version.range("9.1") },
 	{ src = "https://github.com/Saghen/blink.cmp", version = vim.version.range("1.10") },
 	{ src = "https://github.com/mfussenegger/nvim-lint" },
+	{ src = "https://github.com/nvim-mini/mini.snippets" },
 
 	-- Buffer & status
 	{ src = "https://github.com/akinsho/bufferline.nvim", version = vim.version.range("4.9") },
@@ -41,9 +42,10 @@ require("plugins.conform")
 require("plugins.fff")
 require("plugins.lint")
 require("plugins.oil")
--- require("plugins.pick")
+require("plugins.snippets")
 require("plugins.treesitter")
 require("plugins.theme")
+
 require("bufferline").setup()
 require("lualine").setup({})
 require("mini.pairs").setup()

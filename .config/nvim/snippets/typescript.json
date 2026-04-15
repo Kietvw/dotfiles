@@ -1,0 +1,23 @@
+{
+  "withDefaults": {
+    "prefix": ["withDefaults", "wd"],
+    "body": ["const props = withDefaults(defineProps<{\n\t$0\n}>(), {})"]
+  },
+  "defineProps": {
+    "prefix": ["dp", "defineProps"],
+    "body": ["const props = defineProps<{$0}>()"]
+  },
+  "defineEmits": {
+    "prefix": ["de", "defineEmits"],
+    "body": ["const emit = defineEmits<{$0}>()"]
+  },
+  "defineSlots": {
+    "prefix": ["ds", "defineSlots"],
+    "body": ["const slots = defineSlots<{$0}>()"]
+  },
+  "console.log": {
+    "prefix": ["log", "console.log"],
+    "body": "console.log($0)",
+    "description": "Log to console"
+  }
+}

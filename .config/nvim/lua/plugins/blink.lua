@@ -1,4 +1,7 @@
 require("blink.cmp").setup({
+	snippets = {
+		preset = "mini_snippets",
+	},
 	completion = {
 		list = {
 			selection = {
@@ -43,6 +46,12 @@ require("blink.cmp").setup({
 	signature = { enabled = true },
 	sources = {
 		default = { "snippets", "lsp", "path", "buffer" },
+		providers = {
+			lsp = { score_offset = 100 },
+			snippets = { score_offset = 80 },
+			path = { score_offset = 70 },
+			buffer = { score_offset = 70 },
+		},
 	},
 	fuzzy = {
 		implementation = "prefer_rust_with_warning",
