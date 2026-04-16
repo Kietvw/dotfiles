@@ -48,7 +48,7 @@ require("blink.cmp").setup({
 		default = { "snippets", "lsp", "path", "buffer" },
 		providers = {
 			lsp = { score_offset = 100 },
-			snippets = { score_offset = 80 },
+			snippets = { score_offset = 50 },
 			path = { score_offset = 70 },
 			buffer = { score_offset = 70 },
 		},
