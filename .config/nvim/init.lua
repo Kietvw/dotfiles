@@ -8,7 +8,7 @@ vim.pack.add({
 	{ src = "https://github.com/nvim-tree/nvim-web-devicons" },
 
 	-- Lsp
-	{ src = "https://github.com/nvim-treesitter/nvim-treesitter" },
+	{ src = "https://github.com/romus204/tree-sitter-manager.nvim" },
 	{ src = "https://github.com/neovim/nvim-lspconfig", version = vim.version.range("2.8") },
 
 	-- Files
