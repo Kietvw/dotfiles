@@ -9,18 +9,16 @@ vim.pack.add({
 
 	-- Lsp
 	{ src = "https://github.com/romus204/tree-sitter-manager.nvim" },
-	{ src = "https://github.com/neovim/nvim-lspconfig", version = vim.version.range("2.8") },
+	{ src = "https://github.com/neovim/nvim-lspconfig", version = vim.version.range("2.10") },
 
 	-- Files
 	{ src = "https://github.com/stevearc/oil.nvim" },
-	{ src = "https://github.com/nvim-mini/mini.pick" },
 	{ src = "https://github.com/dmtrKovalenko/fff.nvim" },
 
 	-- Code assist
 	{ src = "https://github.com/stevearc/conform.nvim", version = vim.version.range("9.1") },
 	{ src = "https://github.com/Saghen/blink.cmp", version = vim.version.range("1.10") },
 	{ src = "https://github.com/mfussenegger/nvim-lint" },
-	{ src = "https://github.com/nvim-mini/mini.snippets" },
 
 	-- Buffer & status
 	{ src = "https://github.com/akinsho/bufferline.nvim", version = vim.version.range("4.9") },
@@ -34,7 +32,7 @@ vim.pack.add({
 	{ src = "https://github.com/echasnovski/mini.pairs" },
 	{ src = "https://github.com/folke/zen-mode.nvim", version = vim.version.range("1.4") },
 	{ src = "https://github.com/kdheepak/lazygit.nvim" },
-	{ src = "https://github.com/MeanderingProgrammer/render-markdown.nvim", version = vim.version.range("8.12") },
+	{ src = "https://github.com/MeanderingProgrammer/render-markdown.nvim", version = vim.version.range("8.13") },
 })
 
 require("plugins.blink")
@@ -42,10 +40,8 @@ require("plugins.conform")
 require("plugins.fff")
 require("plugins.lint")
 require("plugins.oil")
-require("plugins.snippets")
 require("plugins.treesitter")
 require("plugins.theme")
-
 require("bufferline").setup()
 require("lualine").setup({})
 require("mini.pairs").setup()

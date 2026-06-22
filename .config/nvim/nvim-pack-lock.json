@@ -21,7 +21,7 @@
       "version": "5.4.0 - 5.5.0"
     },
     "fff.nvim": {
-      "rev": "7de55be63d725d94944e5e89206284a67b8baa08",
+      "rev": "957f222da76f120868defdf9e7204309c3800e5e",
       "src": "https://github.com/dmtrKovalenko/fff.nvim"
     },
     "gitsigns.nvim": {
@@ -34,45 +34,41 @@
       "src": "https://github.com/kdheepak/lazygit.nvim"
     },
     "lualine.nvim": {
-      "rev": "a905eeebc4e63fdc48b5135d3bf8aea5618fb21c",
+      "rev": "221ce6b2d999187044529f49da6554a92f740a96",
       "src": "https://github.com/nvim-lualine/lualine.nvim"
     },
     "mini.pairs": {
-      "rev": "42387c7fe68fc0b6e95eaf37f1bb76e7bffaa0d9",
+      "rev": "4a014143fcb4e9df26198ccb3ecff3b9e77a048c",
       "src": "https://github.com/echasnovski/mini.pairs"
     },
-    "mini.pick": {
-      "rev": "437d44eb57312f23e6b931704694fc294922cd88",
-      "src": "https://github.com/nvim-mini/mini.pick"
-    },
     "mini.snippets": {
-      "rev": "8e3acd41bd7ee8f89967c83bacc93871b98a14aa",
+      "rev": "cf5607c66571d130663fd20761d7cbebdbbf713d",
       "src": "https://github.com/nvim-mini/mini.snippets"
     },
     "nvim-lint": {
-      "rev": "eab58b48eb11d7745c11c505e0f3057165902461",
+      "rev": "01c9842c089069ab497430159312b2c8868a4590",
       "src": "https://github.com/mfussenegger/nvim-lint"
     },
     "nvim-lspconfig": {
-      "rev": "9bafffaeaae363c5211080e06e04ed5b422fd5ad",
+      "rev": "229b79051b380377664edc4cbd534930154921a1",
       "src": "https://github.com/neovim/nvim-lspconfig",
-      "version": "2.8.0 - 2.9.0"
+      "version": "2.10.0 - 2.11.0"
     },
     "nvim-web-devicons": {
-      "rev": "c72328a5494b4502947a022fe69c0c47e53b6aa6",
+      "rev": "dfbfaa967a6f7ec50789bead7ef87e336c1fa63c",
       "src": "https://github.com/nvim-tree/nvim-web-devicons"
     },
     "oil.nvim": {
-      "rev": "0fcc83805ad11cf714a949c98c605ed717e0b83e",
+      "rev": "b73018b75affd13fa38e2fc94ef753b465f770d7",
       "src": "https://github.com/stevearc/oil.nvim"
     },
     "render-markdown.nvim": {
-      "rev": "e3c18ddd27a853f85a6f513a864cf4f2982b9f26",
+      "rev": "f422cb5c6855f150e2ddcfaf44e7157b98b34f6a",
       "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim",
-      "version": "8.12.0 - 8.13.0"
+      "version": "8.13.0 - 8.14.0"
     },
     "tree-sitter-manager.nvim": {
-      "rev": "59e1ba49e33e1b73bef655fd34b5e65e1465053f",
+      "rev": "ae305699da5e97b6cffdd5cc6f6045b1b0bd26ea",
       "src": "https://github.com/romus204/tree-sitter-manager.nvim"
     },
     "vim-sleuth": {
