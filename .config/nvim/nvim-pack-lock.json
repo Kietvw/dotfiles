@@ -16,12 +16,12 @@
       "version": "9.1.0 - 9.2.0"
     },
     "cyberdream.nvim": {
-      "rev": "3def90c9eded09e5aae818983f14b5fe52b2034a",
+      "rev": "b9cc88378b776f33d3ea77164716f37c3f13ef72",
       "src": "https://github.com/scottmckendry/cyberdream.nvim",
-      "version": "5.4.0 - 5.5.0"
+      "version": "5.5.0 - 5.6.0"
     },
     "fff.nvim": {
-      "rev": "957f222da76f120868defdf9e7204309c3800e5e",
+      "rev": "a0008b1cde4ce8f29cbdf63b52fde1ab7d0f7f6f",
       "src": "https://github.com/dmtrKovalenko/fff.nvim"
     },
     "gitsigns.nvim": {
@@ -38,7 +38,7 @@
       "src": "https://github.com/nvim-lualine/lualine.nvim"
     },
     "mini.pairs": {
-      "rev": "4a014143fcb4e9df26198ccb3ecff3b9e77a048c",
+      "rev": "db0fac0a25884183650352ccf92b362a41ed2e9c",
       "src": "https://github.com/echasnovski/mini.pairs"
     },
     "mini.snippets": {
@@ -46,7 +46,7 @@
       "src": "https://github.com/nvim-mini/mini.snippets"
     },
     "nvim-lint": {
-      "rev": "01c9842c089069ab497430159312b2c8868a4590",
+      "rev": "a219b2c9e5b4765e5c845aba119dad55806fcaf1",
       "src": "https://github.com/mfussenegger/nvim-lint"
     },
     "nvim-lspconfig": {
