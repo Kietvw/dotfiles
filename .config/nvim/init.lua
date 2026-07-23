@@ -9,7 +9,7 @@ vim.pack.add({
 
 	-- Lsp
 	{ src = "https://github.com/romus204/tree-sitter-manager.nvim" },
-	{ src = "https://github.com/neovim/nvim-lspconfig", version = vim.version.range("2.10") },
+	{ src = "https://github.com/neovim/nvim-lspconfig", version = vim.version.range("2.11") },
 
 	-- Files
 	{ src = "https://github.com/stevearc/oil.nvim" },
@@ -35,6 +35,7 @@ vim.pack.add({
 	{ src = "https://github.com/MeanderingProgrammer/render-markdown.nvim", version = vim.version.range("8.13") },
 })
 
+require('plugins.buffer')
 require("plugins.blink")
 require("plugins.conform")
 require("plugins.fff")
