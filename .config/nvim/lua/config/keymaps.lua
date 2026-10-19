@@ -36,7 +36,13 @@ vim.keymap.set("n", "<Tab>", ":bnext<CR>", opts)
 vim.keymap.set("n", "<S-Tab>", ":bprevious<CR>", opts)
 vim.keymap.set("n", "<leader>x", function()
 	local buffer = vim.api.nvim_get_current_buf()
-	vim.cmd("bprevious")
+	-- Prefer the alternate (last visited) buffer, fall back to list order
+	local alternate = vim.fn.bufnr("#")
+	if alternate > 0 and alternate ~= buffer and vim.bo[alternate].buflisted then
+		vim.cmd("buffer #")
+	else
+		vim.cmd("bprevious")
+	end
 	local previousbuffer = vim.api.nvim_get_current_buf()
 
 	if buffer == previousbuffer then
