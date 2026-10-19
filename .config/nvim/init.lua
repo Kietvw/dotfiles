@@ -2,6 +2,29 @@ require("config.options")
 require("config.keymaps")
 require("core.lsp")
 
+-- Build hooks must exist before vim.pack.add() to catch the "install" event
+vim.api.nvim_create_autocmd("PackChanged", {
+	group = vim.api.nvim_create_augroup("my.pack_hooks", { clear = true }),
+	callback = function(event)
+		local data = event.data
+		if data.spec.name == "fff.nvim" and (data.kind == "install" or data.kind == "update") then
+			if not data.active then
+				vim.cmd.packadd("fff.nvim")
+			end
+			local download = require("fff.download")
+			-- Windows locks a loaded DLL, but allows renaming it; move it aside so the new one can take its place
+			local bin = download.get_binary_path()
+			os.remove(bin .. ".old")
+			os.rename(bin, bin .. ".old")
+			local ok, err = pcall(download.download_or_build_binary)
+			if not ok then
+				os.rename(bin .. ".old", bin)
+				vim.notify("fff.nvim: " .. err, vim.log.levels.ERROR)
+			end
+		end
+	end,
+})
+
 vim.pack.add({
 	-- Theme
 	{ src = "https://github.com/scottmckendry/cyberdream.nvim", version = vim.version.range("5.5") },
