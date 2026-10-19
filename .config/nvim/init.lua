@@ -9,7 +9,7 @@ vim.pack.add({
 
 	-- Lsp
 	{ src = "https://github.com/romus204/tree-sitter-manager.nvim" },
-	{ src = "https://github.com/neovim/nvim-lspconfig", version = vim.version.range("2.11") },
+	{ src = "https://github.com/neovim/nvim-lspconfig", version = vim.version.range("2.12") },
 
 	-- Files
 	{ src = "https://github.com/stevearc/oil.nvim" },
@@ -32,7 +32,7 @@ vim.pack.add({
 	{ src = "https://github.com/echasnovski/mini.pairs" },
 	{ src = "https://github.com/folke/zen-mode.nvim", version = vim.version.range("1.4") },
 	{ src = "https://github.com/kdheepak/lazygit.nvim" },
-	{ src = "https://github.com/MeanderingProgrammer/render-markdown.nvim", version = vim.version.range("8.13") },
+	{ src = "https://github.com/MeanderingProgrammer/render-markdown.nvim", version = vim.version.range("8.14") },
 })
 
 require('plugins.buffer')

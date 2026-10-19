@@ -1,4 +1,5 @@
 vim.api.nvim_create_autocmd("PackChanged", {
+	group = vim.api.nvim_create_augroup("my.fff", { clear = true }),
 	callback = function(event)
 		if event.data.updated then
 			require("fff.download").download_or_build_binary()

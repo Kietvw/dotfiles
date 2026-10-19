@@ -25,10 +25,6 @@ vim.keymap.set({ "n", "v" }, "J", "5j")
 vim.keymap.set("n", "n", "nzzzv", opts)
 vim.keymap.set("n", "N", "Nzzzv", opts)
 
--- Faster vertical movement with shift
-vim.keymap.set("n", "K", "5k")
-vim.keymap.set("n", "J", "5j")
-
 -- Resize with arrows
 vim.keymap.set("n", "<Up>", ":resize -2<CR>", opts)
 vim.keymap.set("n", "<Down>", ":resize +2<CR>", opts)
@@ -63,7 +59,8 @@ vim.keymap.set("n", "<leader>X", function()
 	local current_buffer = vim.api.nvim_get_current_buf()
 
 	for _, buffer in ipairs(buffers) do
-		if buffer ~= current_buffer then
+		-- Skip buffers with unsaved changes
+		if buffer ~= current_buffer and not vim.bo[buffer].modified then
 			vim.api.nvim_buf_delete(buffer, {})
 		end
 	end
@@ -76,10 +73,10 @@ vim.keymap.set("n", "<leader>se", "<C-w>=", opts) -- make split windows equal wi
 vim.keymap.set("n", "<leader>w", ":close<CR>", opts) -- close current split window
 
 -- Navigate between splits
-vim.api.nvim_set_keymap("n", "<C-h>", "<C-w>h", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<C-j>", "<C-w>j", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<C-k>", "<C-w>k", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<C-l>", "<C-w>l", { noremap = true, silent = true })
+vim.keymap.set("n", "<C-h>", "<C-w>h", opts)
+vim.keymap.set("n", "<C-j>", "<C-w>j", opts)
+vim.keymap.set("n", "<C-k>", "<C-w>k", opts)
+vim.keymap.set("n", "<C-l>", "<C-w>l", opts)
 
 -- Tabs
 vim.keymap.set("n", "<leader>to", ":tabnew<CR>", opts) -- open new tab
@@ -108,13 +105,10 @@ vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float, { desc = "Open float
 vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostics list" })
 
 -- LSP keymaps
+-- Built-in defaults: grn rename, gra code action, grr references, gri implementation, grt type definition
 -- vim.keymap.set('n', '<leader>a', vim.lsp.buf.format)
-vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, { desc = "Rename symbol" })
-vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code action" })
 vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
 vim.keymap.set("n", "gD", vim.lsp.buf.declaration, { desc = "Go to declaration" })
-vim.keymap.set("n", "gi", vim.lsp.buf.implementation, { desc = "Go to implementation" })
-vim.keymap.set("n", "gr", vim.lsp.buf.references, { desc = "Go to references" })
 vim.keymap.set("n", "<leader>k", vim.lsp.buf.hover, { desc = "Hover documentation" })
 vim.keymap.set("i", "<C-k>", vim.lsp.buf.hover, { desc = "Hover documentation" })
 vim.keymap.set("n", "<leader>ds", vim.lsp.buf.document_symbol, { desc = "Document symbol" })
