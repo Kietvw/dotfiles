@@ -21,7 +21,7 @@
       "version": "5.5.0 - 5.6.0"
     },
     "fff.nvim": {
-      "rev": "51649e10e1ee5502f5c110679ef3102748c18c77",
+      "rev": "7353971198321b5330824c29eb4e49635c072245",
       "src": "https://github.com/dmtrKovalenko/fff.nvim"
     },
     "gitsigns.nvim": {
@@ -41,8 +41,12 @@
       "rev": "03eb1f0062a2cee5314d1ac3939246e4bb21352e",
       "src": "https://github.com/echasnovski/mini.pairs"
     },
+    "mini.pick": {
+      "rev": "9368112b7cafb61d837bed55fc6f40e55df53fa0",
+      "src": "https://github.com/nvim-mini/mini.pick"
+    },
     "mini.snippets": {
-      "rev": "4669506967da8109bf8cbf15c924fa43502cf312",
+      "rev": "810c9aeb976791e3c329e0f073c82dab70fed8a7",
       "src": "https://github.com/nvim-mini/mini.snippets"
     },
     "nvim-lint": {
@@ -53,6 +57,10 @@
       "rev": "4d363f93c3581b9212a24f7a830d7590b3f050af",
       "src": "https://github.com/neovim/nvim-lspconfig",
       "version": "2.12.0 - 2.13.0"
+    },
+    "nvim-treesitter": {
+      "rev": "29212d826054bb2948fa9d3a99eca9bf6a050eb2",
+      "src": "https://github.com/nvim-treesitter/nvim-treesitter"
     },
     "nvim-web-devicons": {
       "rev": "ec309a0eaff6ea967e58c275996155ab5c16938d",
@@ -68,7 +76,7 @@
       "version": "8.14.0 - 8.15.0"
     },
     "tree-sitter-manager.nvim": {
-      "rev": "e99a8d5abf935cc193cc71600a2ad6a5b61b1aa0",
+      "rev": "06c90a3af8eb471f4a4ff979d681312284a8583a",
       "src": "https://github.com/romus204/tree-sitter-manager.nvim"
     },
     "vim-sleuth": {
